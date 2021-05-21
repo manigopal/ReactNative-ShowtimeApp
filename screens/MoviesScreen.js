@@ -1,11 +1,22 @@
 import React from 'react';
 import styled from 'styled-components/native';
+import { TouchableOpacity } from 'react-native';
 
 class MoviesScreen extends React.Component{
     render() {
+
+        const { navigation} = this.props;
+        const moviedata = navigation.getParam('moviedata');
+
         return (
             <Container>
-                <Text> Video Screen </Text>
+                <TouchableOpacity 
+                onPress={() => {
+                    this.props.navigation.goBack();
+                }}
+                >
+                <Text> {moviedata.title} </Text>
+                </TouchableOpacity>
             </Container>
         )
     }
