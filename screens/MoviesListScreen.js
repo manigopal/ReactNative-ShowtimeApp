@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { TouchableOpacity } from 'react-native';
 
-class TvShowsScreen extends React.Component{
+class MoviesListScreen extends React.Component{
     render() {
 
         const { navigation} = this.props;
-        const tvshowdata = navigation.getParam('tvshowdata');
+        const moviedata = navigation.getParam('moviedata');
 
         return (
             <Container>
@@ -15,14 +15,15 @@ class TvShowsScreen extends React.Component{
                     this.props.navigation.goBack();
                 }}
                 >
-                <Text> {tvshowdata.title} </Text>
+                {/* <Text> {moviedata.title} </Text> */}
+                <Text> Go Back </Text>
                 </TouchableOpacity>
             </Container>
         )
     }
 }
 
-export default TvShowsScreen;
+export default MoviesListScreen;
 
 const Container = styled.View`
     flex : 1;

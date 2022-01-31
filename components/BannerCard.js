@@ -22,7 +22,7 @@ export default class BannerCard extends React.Component{
               />
               <ImageTitle>Fantastic Beasts and Where to Find Them</ImageTitle>
               <ImageDescription> Bullied as a teen for being overweight, Bob Stone (Dwayne Johnson) shows up to his high school reunion looking fit and muscular. Claiming to be on a top-secret ...
-                </ImageDescription>  
+              </ImageDescription>  
             </Container>
 
         )

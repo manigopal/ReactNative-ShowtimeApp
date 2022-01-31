@@ -125,8 +125,7 @@ class HomeScreen extends React.Component{
             <TouchableOpacity key={index}
             onPress={() => {
               this.props.navigation.push("Movies",{
-                moviedata: data,
-                datas: FeaturedMoviesCardData
+                moviedata: data
               });
             }}>
               <FeaturedMoviesCard featuredmoviescardimage={data.image} />
@@ -355,7 +354,7 @@ flex: 1;
 
 const Main = styled.View`
   flex: 2;
-  background-color: #f5f5f5;
+  background-color: #f1f1f1;
   /* align-items: center;
   justify-content: center; */
 `;
@@ -490,7 +489,7 @@ const FeaturedTvShowsCardData = [
 ];
 
 const MoviesTitleContainer = styled.View`
-  padding: 20px 10px 0px;
+  padding: 20px 10px 15px;
   flex-direction: row;
   align-items: center;
 `;
@@ -623,7 +622,7 @@ const MoviesRecentlyAddedTabCardData = [
 ];
 
 const TvShowsTitleContainer = styled.View`
-  padding: 20px 10px 0px;
+  padding: 20px 10px 15px;
   flex-direction: row;
   align-items: center;
 `;
